@@ -1,2 +1,4 @@
 # SendComand
-Acest program este folosit pentru a primi comenzi pe telefon cu S.O. Android, prin SMS pentru diverse dispozitive cu conexiune bluetooth. 
+Acest program este folosit pentru a primi comenzi pe smartphone cu S.O. Android, prin SMS pentru diverse dispozitive cu conexiune bluetooth.
+Practic un smartphone este utilizat pentru a primi comenzi prin mesaje SMS, ca dupa aceea sa le transmita imediat prin bluetooth la un dispozitiv care executa comanda. Astfel putem aprinde/stinge lumina in casa, porni/opri centrala si multe alte comenzi. Comenzile sunt predefinite.
+In MainActivity.java se asigura functionalitate primei pagini din aplicatie. Aici se gasesc functiile care deschid conexiunea bluetooth, se cauta alte dispozitive si se face imperechierea cu acestea. Tot de aici se deschide un service, si anume MyBluetoothServiceClass, care se ocupa de deschiderea canalului de comunicatie dintre dispozitive si de transmisia si primirea datelor. Dupa deschiderea serviceului se trece la o alta activitate "SendCommand" care se ocupa cu transferul datelor primite prin SMS prin bluetooth la dispozitivul care asteapta comanda.
