@@ -110,7 +110,7 @@ public class SendCommand extends AppCompatActivity {
             response.setText(text);
 
             SmsManager mySmsManager = SmsManager.getDefault();
-            mySmsManager.sendTextMessage("0753742711",null,text,null,null);
+            mySmsManager.sendTextMessage("xxxxxxxxxx",null,text,null,null);
         }
     };
 }
